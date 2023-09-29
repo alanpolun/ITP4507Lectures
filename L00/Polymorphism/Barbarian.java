@@ -1,3 +1,4 @@
+package Polymorphism;
 public class Barbarian extends Hero {
     int fury;
     

@@ -1,3 +1,4 @@
+package Polymorphism;
 abstract public class Hero {
     String name;
     int hp;

@@ -1,3 +1,4 @@
+package Polymorphism;
 public class Test {
     public static void main(String[] args) {
         Barbarian b = new Barbarian("Conan", 100, 10);

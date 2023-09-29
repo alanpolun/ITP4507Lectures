@@ -1,3 +1,4 @@
+package Polymorphism;
 public class Test3 {
     public static void main(String[] args){
         Hero heroes[] = new Hero[2];

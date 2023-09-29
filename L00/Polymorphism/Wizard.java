@@ -1,3 +1,4 @@
+package Polymorphism;
 public class Wizard extends Hero {
     int mp;
 
