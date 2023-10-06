@@ -11,6 +11,7 @@ public class Deer2HorseAdapter extends Horse {
     }
 
     public void HorseDetail() {
-        deer.DeerDetail();
+        System.out.println("Deer name: " + deer.name);
+        System.out.println("Deer hp: " + deer.age*100);
     }
 }

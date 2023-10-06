@@ -1,4 +1,4 @@
-package ObjectReference;
+//package ObjectReference;
 
 public class Client {
     public static void ChangeRectangle(Rectangle r) {
@@ -6,7 +6,7 @@ public class Client {
         r.width = 160;
     }
 
-    public static void ChangeX(int x){
-        x = 100;
+    public static void ChangeX(int y){
+        y = 100;
     }
 }

@@ -1,4 +1,4 @@
-package ObjectReference;
+//package ObjectReference;
 
 //create a class Rectangle with attributes Hienght and Width
 class Rectangle {
