@@ -1,9 +1,13 @@
+import java.util.*;
+
 public class WithdrawCommand implements Command {
 	Account acc;
 	double amount;
-	public WithdrawCommand(Account account, double amt) {
+	Scanner sc;
+	public WithdrawCommand(Account account, Scanner sc) {
 		this.acc = account;
-		this.amount = amt;
+		System.out.print("Withdraw Amount: ");
+		this.amount = sc.nextDouble();
 	}
 	
 	public void execute() {
@@ -23,5 +27,9 @@ public class WithdrawCommand implements Command {
 		System.out.println("After undo uithdraw, balance = " + acc.getBalance());
 		System.out.println("----End------");
 		
+	}
+
+	public String toString() {
+		return "Withdraw: " + amount + " Account: " + acc.toString();
 	}
 }

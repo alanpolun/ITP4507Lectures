@@ -1,4 +1,3 @@
-package L04.NoCommand;
 import java.util.*;
 
 public class MainNoCommand {

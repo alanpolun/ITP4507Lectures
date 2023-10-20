@@ -1,4 +1,3 @@
-package L04.NoCommand;
 public class Account {
 	protected int accountNumber;
 	protected double balance;

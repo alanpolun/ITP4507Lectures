@@ -1,9 +1,13 @@
+import java.util.*;
+
 public class DepositCommand implements Command {
 	Account acc;
 	double amount;
-	public DepositCommand(Account account, double amt) {
+	Scanner sc;
+	public DepositCommand(Account account, Scanner sc) {
 		this.acc = account;
-		this.amount = amt;
+		System.out.print("Deposit Amount: ");
+		this.amount = sc.nextDouble();
 	}
 	
 	public void execute() {
@@ -23,5 +27,9 @@ public class DepositCommand implements Command {
 		System.out.println("After undo deposit, balance = " + acc.getBalance());
 		System.out.println("----End------");
 		
+	}
+
+	public String toString() {
+		return "Deposit: " + amount + " Account: " + acc.toString();
 	}
 }

@@ -12,7 +12,7 @@ public class Main {
         int command;
         while (true) {
             System.out.println("Enter command: \n0 = exit, 1 = deposit, 2 = withdraw, "+
-            	"\n3 = undo last transaction, 4 = show account balance");
+            	"\n3 = undo last transaction, 4 = show account balance, 5 = Undo List");
             command = sc.nextInt();
         	switch (command) {
 	            case 0:
@@ -32,7 +32,7 @@ public class Main {
 					// undo the commands
 					if (!commandStack.empty()) {
 						// get the latest command in the stack
-						Command c = (Command) commandStack.pop();
+						Command c = commandStack.pop();
 						// undo the latest command
 						c.undo();
 					} else {
@@ -42,6 +42,9 @@ public class Main {
 	            case 4:
 	            	System.out.println(acc);
 	            	break;
+				case 5:
+					for (Command c:commandStack)
+						System.out.println(c);
 	            default:
 	            	System.out.println("Error on your input!");
         	}
