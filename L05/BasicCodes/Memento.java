@@ -1,10 +1,10 @@
 public class Memento {
-	private int state; // for keeping originator’s state
+	private int state; // for keeping originatorï¿½s state
 	Originator orig;
 	
 	public Memento(Originator o) {
-		orig = o;
-		state = orig.state; // save originator’s state
+		orig = o;//object reference 
+		state = orig.state; // save originatorï¿½s state
 	}
 
 	public void restore() {
