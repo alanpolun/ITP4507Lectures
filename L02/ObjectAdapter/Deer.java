@@ -11,10 +11,4 @@ public class Deer {
         System.out.println("Deer " + name + " is walking.");
     }
 
-/*
-    public void DeerDetail() {
-        System.out.println("Deer name: " + name);
-        System.out.println("Deer age: " + age);
-    }
-    */
 }

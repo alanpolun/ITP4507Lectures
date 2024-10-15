@@ -10,6 +10,8 @@ public class Main {
         shapes[4] = new Circle(5, new Point(2,3));
         shapes[5] = new Rectangle(6, 4, new Point(8,9));
         
-        Client.drawAllShape(shapes);
+        for(Shape shape : shapes) {
+            Client.drawShape(shape);
+        }
     }
 }

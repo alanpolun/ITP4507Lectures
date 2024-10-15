@@ -3,7 +3,7 @@ public class Deer2HorseAdapter extends Horse {
     
     public Deer2HorseAdapter(Deer deer) {
         super(deer.name, 20, 0);
-        this.deer = deer;
+        this.deer = deer;//object reference
     }
     
     public void run() {

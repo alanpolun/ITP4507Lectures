@@ -1,12 +1,12 @@
 //package ObjectReference;
 
 //create a class Rectangle with attributes Hienght and Width
-class Rectangle {
+public class Rectangle2 {
     public int height;
     public int width;
 
     //create a constructor with two parameters
-    public Rectangle(int h, int w) {
+    public Rectangle2(int h, int w) {
         height = h;
         width = w;
     }

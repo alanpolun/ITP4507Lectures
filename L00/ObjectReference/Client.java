@@ -1,7 +1,7 @@
 //package ObjectReference;
 
 public class Client {
-    public static void ChangeRectangle(Rectangle r) {
+    public static void ChangeRectangle(Rectangle2 r) {
         r.height = 150;
         r.width = 160;
     }
